@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "190808887057",
+    "project_id": "trashform-aea03",
+    "storage_bucket": "trashform-aea03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190808887057:android:2384bf4c3de963eaaa86b0",
+        "android_client_info": {
+          "package_name": "com.example.trashform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190808887057-gvff68fs2bmuvi4qkqn2orrascb669os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmc__gKpsg4v8W0lCoYyB-788Uaf5Uniw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190808887057-gvff68fs2bmuvi4qkqn2orrascb669os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
