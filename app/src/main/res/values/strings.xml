@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TrashForm</string>
+    <string name="my_image_description" />
+    <string name="Welcome_to_trashform">Welcome to TrashForm</string>
 </resources>
