@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:layout_gravity="center_horizontal"
     android:padding="50dp"
     tools:context=".LoginActivity">
@@ -32,37 +31,37 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:id="@+id/username"
         android:background="@drawable/custom_edittext"
         android:layout_marginTop="20dp"
         android:inputType="text"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textStyle="normal"
         android:hint="@string/username"
         android:autofillHints="username"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:id="@+id/password"
         android:background="@drawable/custom_edittext"
         android:layout_marginTop="15dp"
         android:inputType="textPassword"
-        android:padding="20dp"
+        android:padding="15dp"
         android:hint="@string/password"
         android:autofillHints="password"/>
 
     <!--Sign In Button-->
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:text="@string/sign_in"
         android:id="@+id/SignInText"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/green"
         app:cornerRadius = "10dp"/>
 
@@ -99,8 +98,8 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_marginTop="30dp"
-            android:layout_marginHorizontal="85dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="95dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/google_logo"
@@ -110,11 +109,11 @@
             android:id="@+id/Google"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button_border"
             android:backgroundTint="@color/white"
-            android:paddingStart="65dp"
-            android:paddingEnd="40dp"
+            android:paddingStart="75dp"
+            android:paddingEnd="45dp"
             android:text="@string/google"
             android:textColor="@color/dark_green"
             android:textSize="18sp"
