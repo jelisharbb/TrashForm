@@ -28,9 +28,9 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         binding.signUp.setOnClickListener {
-            val email = binding.email.text.toString()
-            val pass = binding.password.text.toString()
-            val confirmPass = binding.confirmPassword.text.toString()
+            val email = binding.email.editText?.text.toString()
+            val pass = binding.password.editText?.text.toString()
+            val confirmPass = binding.confirmPassword.editText?.text.toString()
 
             if (email.isNotEmpty() && pass.isNotEmpty() && confirmPass.isNotEmpty()) {
                 if (pass == confirmPass) {
