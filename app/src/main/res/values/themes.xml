@@ -6,4 +6,8 @@
         <item name ="fontFamily">@font/montserrat</item>
     </style>
 
+    <style name="CustomTextInputLayout" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/custom_hint_color</item>
+    </style>
+
 </resources>

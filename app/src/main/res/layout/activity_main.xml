@@ -32,29 +32,41 @@
         android:textColor="@color/dark_green"/>
 
     <!--Email Input Area-->
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:id="@+id/email"
-        android:background="@drawable/custom_edittext"
-        android:layout_marginTop="20dp"
-        android:inputType="textEmailAddress"
-        android:padding="15dp"
-        android:textStyle="normal"
-        android:hint="@string/email"
-        android:autofillHints="email"/>
+        android:layout_marginTop="15dp"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:autofillHints="emailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Password Input Area-->
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:id="@+id/password"
-        android:background="@drawable/custom_edittext"
         android:layout_marginTop="15dp"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:hint="@string/password"
-        android:autofillHints="password"/>
+        app:passwordToggleEnabled="true"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:autofillHints="password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Sign In Button-->
     <Button
