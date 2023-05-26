@@ -5,20 +5,59 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.example.trashform.databinding.ActivityRegisterBinding
+import com.google.firebase.auth.FirebaseAuth
+import android.widget.Toast
 
 class RegisterActivity : AppCompatActivity() {
 
-    private lateinit var signIn: TextView
+    private lateinit var binding: ActivityRegisterBinding
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
 
-        signIn = findViewById(R.id.signIn)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        signIn.setOnClickListener {
-            val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        binding.signIn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish()
         }
+
+        binding.signUp.setOnClickListener {
+            val email = binding.email.text.toString()
+            val pass = binding.password.text.toString()
+            val confirmPass = binding.confirmPassword.text.toString()
+
+            if (email.isNotEmpty() && pass.isNotEmpty() && confirmPass.isNotEmpty()) {
+                if (pass == confirmPass) {
+
+                    firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                } else {
+                    Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                Toast.makeText(this, "Empty fields are not allowed", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+
+//        signIn = findViewById(R.id.signIn)
+//
+//        signIn.setOnClickListener {
+//            val intent = Intent(this@RegisterActivity, MainActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
     }
 }
