@@ -32,14 +32,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:background="@drawable/custom_edittext"
         android:layout_marginTop="20dp"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textStyle="normal"
-        android:hint="@string/username"
-        android:autofillHints="username"/>
+        android:hint="@string/email"
+        android:autofillHints="email"/>
 
     <EditText
         android:layout_width="match_parent"
