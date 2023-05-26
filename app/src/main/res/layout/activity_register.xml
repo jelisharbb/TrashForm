@@ -29,7 +29,7 @@
         android:id="@+id/CreateAccountText"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:textColor="@color/dark_green"/>
 
     <!--Name Input Area-->
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/name"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         style="@style/CustomTextInputLayout"
         app:hintEnabled="false">
 
@@ -57,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/email"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         style="@style/CustomTextInputLayout"
         app:hintEnabled="false">
 
@@ -77,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/location"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         style="@style/CustomTextInputLayout"
         app:hintEnabled="false">
 
@@ -97,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/password"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         app:passwordToggleEnabled="true"
         style="@style/CustomTextInputLayout"
         app:hintEnabled="false">
@@ -117,7 +117,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/confirmPassword"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         app:passwordToggleEnabled="true"
         style="@style/CustomTextInputLayout"
         app:hintEnabled="false">
@@ -135,9 +135,10 @@
     <!--Sign Up Button-->
     <Button
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:id="@+id/sign_up"
+        android:padding="15dp"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_gravity="center"
