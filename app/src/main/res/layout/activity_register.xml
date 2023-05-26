@@ -10,6 +10,7 @@
     android:padding="50dp"
     tools:context=".RegisterActivity">
 
+    <!--Header-->
     <ImageView
         android:id="@+id/logoVer2"
         android:layout_width="230dp"
@@ -20,6 +21,7 @@
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="33dp" />
 
+    <!--Create your account-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +32,7 @@
         android:layout_marginTop="20dp"
         android:textColor="@color/dark_green"/>
 
+    <!--Name Input Area-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -39,9 +42,10 @@
         android:inputType="text"
         android:padding="15dp"
         android:textStyle="normal"
-        android:hint="@string/username"
+        android:hint="@string/name"
         android:autofillHints="username"/>
 
+    <!--Email Input Area-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -53,6 +57,7 @@
         android:hint="@string/email"
         android:autofillHints="emailAddress"/>
 
+    <!--Location Input Area-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -64,6 +69,7 @@
         android:hint="@string/location"
         android:autofillHints="location"/>
 
+    <!--Password Input Area-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -75,6 +81,7 @@
         android:hint="@string/password"
         android:autofillHints="password"/>
 
+    <!--Confirm Password Input Area-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -127,6 +134,7 @@
             android:background="@android:color/black"/>
     </LinearLayout>
 
+    <!--Register with Google Button-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -137,7 +145,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/google_logo"
-            android:contentDescription="@string/google_logo" />
+            android:contentDescription="@string/google_logo"/>
 
         <Button
             android:id="@+id/Google"
@@ -156,6 +164,7 @@
 
     </RelativeLayout>
 
+    <!--To move in Log in Page-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

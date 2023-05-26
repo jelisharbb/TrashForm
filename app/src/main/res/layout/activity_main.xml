@@ -9,6 +9,7 @@
     android:padding="50dp"
     tools:context=".MainActivity">
 
+    <!--Header-->
     <ImageView
         android:id="@+id/logoVer2"
         android:layout_width="230dp"
@@ -19,16 +20,18 @@
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="33dp" />
 
+    <!--Log In-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
         android:id="@+id/LoginText"
+        android:text="@string/login"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:textColor="@color/dark_green"/>
 
+    <!--Email Input Area-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -41,6 +44,7 @@
         android:hint="@string/email"
         android:autofillHints="email"/>
 
+    <!--Password Input Area-->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -56,8 +60,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:text="@string/sign_in"
         android:id="@+id/sign_in"
+        android:text="@string/sign_in"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_gravity="center"
@@ -93,6 +97,7 @@
             android:background="@android:color/black"/>
     </LinearLayout>
 
+    <!--Log  in with Google Button-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -122,6 +127,7 @@
 
     </RelativeLayout>
 
+    <!--To move in Register Page-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
