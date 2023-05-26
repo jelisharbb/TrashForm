@@ -29,69 +29,104 @@
         android:id="@+id/CreateAccountText"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:textColor="@color/dark_green"/>
 
     <!--Name Input Area-->
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/username"
-        android:background="@drawable/custom_edittext"
-        android:layout_marginTop="20dp"
-        android:inputType="text"
-        android:padding="15dp"
-        android:textStyle="normal"
-        android:hint="@string/name"
-        android:autofillHints="username"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_marginTop="10dp"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:inputType="text"
+            android:textStyle="normal"
+            android:hint="@string/name"
+            android:autofillHints="name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Email Input Area-->
-    <EditText
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:id="@+id/email"
-        android:background="@drawable/custom_edittext"
-        android:layout_marginTop="10dp"
-        android:inputType="textEmailAddress"
-        android:padding="15dp"
-        android:hint="@string/email"
-        android:autofillHints="emailAddress"/>
+        android:layout_marginTop="5dp"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textEmailAddress"
+            android:textStyle="normal"
+            android:hint="@string/email"
+            android:autofillHints="emailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Location Input Area-->
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:id="@+id/location"
-        android:background="@drawable/custom_edittext"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
-        android:padding="15dp"
-        android:hint="@string/location"
-        android:autofillHints="location"/>
+        android:layout_marginTop="5dp"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:inputType="text"
+            android:textStyle="normal"
+            android:hint="@string/location"
+            android:autofillHints="location"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Password Input Area-->
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:id="@+id/password"
-        android:background="@drawable/custom_edittext"
-        android:layout_marginTop="10dp"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:hint="@string/password"
-        android:autofillHints="password"/>
+        android:layout_marginTop="5dp"
+        app:passwordToggleEnabled="true"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:autofillHints="password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Confirm Password Input Area-->
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:id="@+id/confirmPassword"
-        android:background="@drawable/custom_edittext"
-        android:layout_marginTop="10dp"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:hint="@string/confirm_password"
-        android:autofillHints="password"/>
+        android:layout_marginTop="5dp"
+        app:passwordToggleEnabled="true"
+        style="@style/CustomTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:hint="@string/confirm_password"
+            android:autofillHints="password"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Sign Up Button-->
     <Button
