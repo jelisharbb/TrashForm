@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
-        binding.signIn.setOnClickListener {
-            val intent = Intent(this, PrefaceActivity::class.java)
+        binding.signUp.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
-        binding.signUp.setOnClickListener {
+        binding.signIn.setOnClickListener {
             val email = binding.email.text.toString()
             val pass = binding.password.text.toString()
 
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, PrefaceActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
